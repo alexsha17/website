@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="0606.mp4" type="video/webm">
+        Ihr Browser unterstützt das Video-Tag nicht.
+    </video>
+
+    <header>
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="home.html" id="home">Home</a></li>
+                <li><a href="über-mich.html" id="über-mich">Über mich</a></li>
+                <li><a href="fähigkeiten.html" id="fähigkeiten">Fähigkeiten</a></li>
+                <li><a href="portfolio.html" id="portfolio">Portfolio</a></li>
+                <li><a href="kontakt.html" id="kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Portfolio <span> <img src="briefcase_1f4bc.png" alt="" class="Briefcase"></span></h1>
+        </section>
+        <section class="portfolio">
+            <div class="projects">
+                <div class="project">
+                    <h3>Projekt 1</h3>
+                    <p>RestAPI mit Spring Boot</p>
+                   <p>Dieses Projekt umfasst die Erstellung einer RESTful API mit Spring boot. Die API ermöglicht CRUD (CREATE, READ, UPDATE, DELETE) Operationen für einfache Datenbankanwendungen. Die Hauptfunktionen der API umfassen die Verwaltung von Benutzerdaten.</p>
+                </div>
+                <div class="project">
+                    <h3>Projekt 2</h3>
+                    <p>Banksystem in Java</p>
+                    <p>Das Ziel dieses Projekts ist es, ein funktionsfähiges Banksystem zu entwickeln, das die grundlegenden Bankoperationen wie Einzahlen, Auszahlen und Kontostandabfrage ermöglicht.
+                    Das System wird in Java programmiert.</p>
+                </div>
+                <div class="project">
+                    <h3>Projekt 3</h3>
+                    <p>Webseite</p>
+                    Das Ziel ist es, eine funktionale Webseite zu entwickeln, die einen Überblick über meine durchgeführten Projekte bietet.
+                </div>
+                <div class="content">
+                    <img src="manager.jpg" alt="" height="200px" width="200px" style="flex-direction: column;" class="productmanager">
+                    <div class="text-container">
+                        <h2> Jonas Müller</h2>
+                        <p> Wohnort: Stuttgart 
+                            <br>
+                            Alter: 30
+                            <br> 
+                            Beruf: Produktemanager in einem Technologieunternehmen
+                            <br>
+                            Intresse: Er ist leidenschaftlich intressiert an technologischen Innovationen und effizienten Softwarelösungen.
+                            <br>
+                            Ziele: Jonas sucht nach talentierten Entwicklern  für kollaborative Projekte und ist ständig auf der Suche nach neuen Inspirationen durch innovative Ideen. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="toggleMenu.js"></script>
+
+</body>
+</html>

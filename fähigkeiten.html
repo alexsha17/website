@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fähigkeiten.css">
+</head>
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="0606.mp4" type="video/webm">
+        Ihr Browser unterstützt das Video-Tag nicht.
+    </video>
+
+    <header>
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="home.html" id="home">Home</a></li>
+                <li><a href="über-mich.html" id="über-mich">Über mich</a></li>
+                <li><a href="fähigkeiten.html" id="fähigkeiten">Fähigkeiten</a></li>
+                <li><a href="portfolio.html" id="portfolio">Portfolio</a></li>
+                <li><a href="kontakt.html" id="kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>Fähigkeiten <img src="Information.png" alt="Information Icon" width="25px" style="border-radius: 5px; vertical-align: sub;"></h1>
+        <div class="chart-container">
+            <div class="chart-description">
+                <p>Auf meiner Webseite präsentiere ich ein Diagramm, das meine Fähigkeiten in verschiedenen Technologien darstellt. Es zeigt, wie versiert ich in MySQL, Java, JavaScript und HTML & CSS bin, jeweils bewertet auf einer Skala von 0 bis 100.</p>
+            </div>
+            <canvas id="barchart"></canvas>
+        </div>
+        <div class="content">
+            <img src="productmanager.jpg" alt="" height="400px" width="400px" style="flex-direction: column;" class="productmanager">
+            <div class="text-container">
+                <h2> Jonas Müller</h2>
+                <p> Wohnort: Stuttgart 
+                    <br>
+                    Alter: 30
+                    <br> 
+                    Beruf: Produktemanager in einem Technologieunternehmen
+                    <br>
+                    Intresse: Er ist leidenschaftlich intressiert an technologischen Innovationen und effizienten Softwarelösungen.
+                    <br>
+                    Ziele: Jonas sucht nach talentierten Entwicklern  für kollaborative Projekte und ist ständig auf der Suche nach neuen Inspirationen durch innovative Ideen. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="toggleMenu.js"> </script>
+    <script src="fähigkeiten.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+   
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="0606.mp4" type="video/webm">
+        Ihr Browser unterstützt das Video-Tag nicht.
+    </video>
+
+    <header>
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="home.html" id="home">Home</a></li>
+                <li><a href="über-mich.html" id="über-mich">Über mich</a></li>
+                <li><a href="fähigkeiten.html" id="fähigkeiten">Fähigkeiten</a></li>
+                <li><a href="portfolio.html" id="portfolio">Portfolio</a></li>
+                <li><a href="kontakt.html" id="kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="toggleMenu.js"></script>
+
+    <div class="content">
+        <h1>Herzlich Willkommen <span> <img src="Emoji Hey.webp" alt="" style="width: 30px; height: 30px;"></span></h1>
+    </div>
+
+    
+    
+</body>
+</html>

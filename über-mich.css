@@ -1,0 +1,216 @@
+@keyframes enhancedFadeIn {
+    0% { opacity: 0; transform: scale(0.95) rotate(-5deg); }
+    50% { opacity: 0.7; transform: scale(1.08); }
+    100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+@media (max-width: 758px) {
+
+
+    header, nav {
+        padding: 10px 10px 10px 10px; 
+    }
+
+
+    nav ul {
+        display: none; /* Verberge die Navigationsliste standardmäßig */
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: fixed; 
+        top: 0; 
+        left: 0;
+        height: 100vh;
+        width: 100%; 
+        z-index: 10;
+        
+    }
+
+    nav ul.show {
+        display: flex; 
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px 5px;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box; 
+    }
+
+    .menu-button {
+        padding: 20px;
+        display: block;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 40px;
+        position: fixed;
+        top: 0px;
+        right: 10px;
+        cursor: pointer;
+        z-index: 11;
+    }
+
+    #backgroundVideo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+        animation: enhancedFadeIn 2.5s ease-in-out forwards;
+        
+    }
+
+    #backgroundVideo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw; /* Breite des Viewports */
+        height: 100vh; /* Höhe des Viewports */
+        object-fit: cover; /* Deckt den angegebenen Bereich vollständig ab, auch wenn das Seitenverhältnis nicht passt */
+        z-index: -1; 
+    }
+    
+}
+
+@media (max-width: 480px) {
+    header, nav {
+        padding: 10px;
+    }
+
+    nav ul li {
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+}
+
+img, .image-placeholder {
+    max-width: 100%;
+    height: auto;
+}
+
+main, header, nav {
+    width: 100%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;  
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: rgb(18, 13, 13);
+}
+
+#backgroundVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    animation: enhancedFadeIn 2.5s ease-in-out forwards;
+    
+}
+
+header, nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.895);
+    z-index: 10;
+    padding: 0; 
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    margin-right: 50px;
+}
+
+nav ul li a:hover {
+    border-color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 75px auto; 
+    text-align: center; 
+}
+
+.container h1 {
+    color: white;
+    margin-bottom: 30px; 
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 0 10px 18px rgba(255, 255, 255, 0.3);
+}
+
+.text-container {
+    animation: enhancedFadeIn 2.5s ease-in-out forwards;
+    width: 50%;
+    padding-right: 30px; 
+}
+
+.text-container h1 {
+    font-size: 20px;
+}
+
+.text-container p {
+    text-align: left; 
+    color: #ffffff; 
+    font-size: 12px; 
+    line-height: 1.5; 
+    margin-bottom: 10px;
+}
+
+.image-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

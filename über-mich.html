@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="über-mich.css">
+</head>
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="0606.mp4" type="video/webm">
+        Ihr Browser unterstützt das Video-Tag nicht.
+    </video>
+
+    <header>
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="home.html" id="home">Home</a></li>
+                <li><a href="über-mich.html" id="über-mich">Über mich</a></li>
+                <li><a href="fähigkeiten.html" id="fähigkeiten">Fähigkeiten</a></li>
+                <li><a href="portfolio.html" id="portfolio">Portfolio</a></li>
+                <li><a href="kontakt.html" id="kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <script src="toggleMenu.js"> </script>
+    
+    <div class="container">
+        <h1>Über mich <span style="vertical-align: sub;"></h1>
+        <div class="content">
+            <div class="text-container">
+                <h1>Biografie</h1>
+                <p>Ich bin Alex, ein 16-jähriger lernender Softwareentwickler.
+                Schon in jungen Jahren war ich von Technologie fasziniert. 
+                Inspiriert von meinem Vorbild Steve Jobs und meinem Bruder habe ich mich für die Informatik entschieden. 
+                Ich erlerne kontinuierlich neue Programmiersprachen und entwickle eigene Projekte, 
+                was mir große Freude bereitet. 
+                Ich habe bereits an verschiedenen Projekten mitgewirkt, von Webseiten bis zu komplexen Anwendungen, 
+                und strebe eine Karriere als Softwareentwickler an. 
+                Mein Ziel ist es, professionell innovative Lösungen zu entwickeln 
+                und weiterhin sowohl persönlich als auch beruflich zu wachsen.
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="no-profile-picture-icon-2.jpg" alt="Alex" style="height: auto; width: auto; border: 1px solid black;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

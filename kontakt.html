@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="kontakt.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/9dc34e90f1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="0606.mp4" type="video/webm">
+        Ihr Browser unterstützt das Video-Tag nicht.
+    </video>
+
+    <header>
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="home.html" id="home">Home</a></li>
+                <li><a href="über-mich.html" id="über-mich">Über mich</a></li>
+                <li><a href="fähigkeiten.html" id="fähigkeiten">Fähigkeiten</a></li>
+                <li><a href="portfolio.html" id="portfolio">Portfolio</a></li>
+                <li><a href="kontakt.html" id="kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="toggleMenu.js"></script>
+
+    <div class="container">
+        <h1>Kontakt</h1>
+        <h2> Haben Sie Fragen? </h2>
+        <br>
+        <p>Für Fragen und weitere Informationen steht Ihnen unser Kontaktformular zur Verfügung. </p>
+
+        <div class="hero">
+            <form action="text">
+                <div class="row">
+                    <div class="input-group">
+                        <input type="text" id="name" required>
+                        <label for="name"> <i class="fas fa-user"></i> Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="number" required>
+                        <label for="number"> <i class="fas fa-phone-square-alt"></i> Telefon </label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="email" required>
+                    <label for="email"><i class=" fas fa-envelope"></i> Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="message"  rows="8" required></textarea>
+                    <label for="message"><i class="fas fa-comments"></i> Deine Nachricht </label>
+                </div>
+                <button type="submit"> Bestätigen <i class="fas fa-paper-plane"></i> </button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="text-container">
+        <h2> Jonas Müller</h2>
+        <p> Wohnort: Stuttgart 
+            <br>
+            Alter: 30
+            <br> 
+            Beruf: Produktemanager in einem Technologieunternehmen
+            <br>
+            Intresse: Er ist leidenschaftlich intressiert an technologischen Innovationen und effizienten Softwarelösungen.
+            <br>
+            Ziele: Jonas sucht nach talentierten Entwicklern  für kollaborative Projekte und ist ständig auf der Suche nach neuen Inspirationen durch innovative Ideen. 
+        </p>
+    </div>
+
+</body>
+</html>
