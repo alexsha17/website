@@ -147,7 +147,7 @@ nav ul li a:hover {
 }
 
 .container {
-    width: 80%; /* Erhöht von 60% auf 80% */
+    width: 100%; 
     max-width: 1000px;
     margin: 50px auto; /* Erhöhter oberer und unterer Rand für bessere Zentrierung */
     display: flex;
