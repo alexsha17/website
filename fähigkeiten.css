@@ -5,8 +5,6 @@
 }
 
 @media (max-width: 758px) {
-
-
     header, nav {
         padding: 10px 10px 10px 10px; 
     }
@@ -23,7 +21,6 @@
         height: 100vh;
         width: 100%; 
         z-index: 10;
-        
     }
 
     nav ul.show {
@@ -61,25 +58,14 @@
         object-fit: cover;
         z-index: -1;
         animation: enhancedFadeIn 2.5s ease-in-out forwards;
-        
-    }
-
-    #backgroundVideo {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw; /* Breite des Viewports */
-        height: 100vh; /* Höhe des Viewports */
-        object-fit: cover; /* Deckt den angegebenen Bereich vollständig ab, auch wenn das Seitenverhältnis nicht passt */
-        z-index: -1; 
     }
 
     .productmanager {
         width: auto;
         height: 110px;
+        margin-bottom: 100px; /* Added margin to ensure 100px spacing */
     }
-    
-    
+
     #barchart {
         flex: 2;  
         justify-content: center; 
@@ -100,9 +86,6 @@
         height: 100vh; 
         padding-top: 160px;
     }
-    
-    
-
 }
 
 @media (max-width: 480px) {
@@ -133,6 +116,7 @@ html, body {
     display: flex;
     flex-direction: column;  
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -148,7 +132,6 @@ body {
     object-fit: cover;
     z-index: -1;
     animation: enhancedFadeIn 2.5s ease-in-out forwards;
-    
 }
 
 header, nav {
@@ -160,6 +143,7 @@ header, nav {
     z-index: 10;
     padding: 0; 
 }
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -195,14 +179,13 @@ nav ul li a:hover {
     height: 100vh; 
 }
 
-
 .container h1 {
     color: white;
     margin-bottom: 20px; 
     font-weight: lighter;
     font-size: 25px;
     text-align: center;
-    padding-top: 75px;
+    padding-top: 60px;
 }
 
 .container h2 {
@@ -213,9 +196,19 @@ nav ul li a:hover {
     text-align: left;
 }
 
+.container p {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
 .content {  
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center;
     align-items: center; 
     padding: 20px;
     background: rgba(255, 255, 255, 0);
@@ -226,7 +219,7 @@ nav ul li a:hover {
 
 .text-container {
     animation: enhancedFadeIn 2.5s ease-in-out forwards;
-    width: 200%;
+    width: 100%;
     padding: 25px; 
 }
 
@@ -245,10 +238,11 @@ nav ul li a:hover {
 }
 
 .image-container {
-    width: 50%;
+    width: 100%;
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Adds spacing between images */
 }
 
 .image-container img {
@@ -256,16 +250,16 @@ nav ul li a:hover {
     max-width: 100%;
     height: auto;
     border-radius: 50px;
-
 }
-
 
 .chart-container {
     display: flex;
-    justify-content: space-between; /* Stellt den Abstand zwischen den Elementen ein */
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center; /* Aligns children to the left */
     align-items: center;
     width: 90%;  /* Setzt die Breite auf 80% der übergeordneten Container-Breite */
     height: 90%; /* Setzt die Höhe auf 80% der übergeordneten Container-Höhe */
+    margin-top: 20px; /* Adds spacing between elements */
 }
 
 .chart-description {
@@ -278,27 +272,21 @@ nav ul li a:hover {
     text-align: left;
 }
 
-
 #barchart {
-    justify-content: flex-end;
+    justify-content: center;
     flex: 2;  
-    justify-content: center; 
     align-items: center; 
-    margin-top: -150px; 
+    margin-top: 20px; 
     background-color: #f4f4f465; 
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.187); 
     border-radius: 5px;
-    max-width: 300px;
-    max-height: 200px;
-    padding: 20px;
-    
+    max-width: 400px;
+    max-height: 300px;
 }
 
 .productmanager {
     height: 200px;
     width: 300px;
+    flex-direction: column; 
+    padding-top: 200px;
 }
-
-
-
-
