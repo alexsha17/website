@@ -12,8 +12,6 @@
 }
 
 @media (max-width: 758px) {
-   
-
     * {
         margin: 0;
     }
@@ -61,14 +59,6 @@
         right: 10px;
         cursor: pointer;
         z-index: 11;
-    }
-
-    .hero {
-        font-size: 20px; /* Erhöhte Schriftgröße für bessere Sichtbarkeit */
-    }
-
-    .text-container p {
-        font-size: 16px; /* Erhöhte Schriftgröße */
     }
 }
 
@@ -147,7 +137,7 @@ nav ul li a:hover {
 }
 
 .container {
-    width: 100%; 
+    width: 100%; /* Erhöht von 60% auf 80% */
     max-width: 1000px;
     margin: 50px auto; /* Erhöhter oberer und unterer Rand für bessere Zentrierung */
     display: flex;
@@ -275,37 +265,64 @@ main, header, nav {
 }
 
 .text-container {
-    width: 80%;
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
     text-align: left;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.text-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .text-container p {
     color: #ffffff;
     font-size: 18px;
     line-height: 1.5;
-    margin-bottom: 100px;
 }
 
-.persona {
-    padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 20px 0;
+@media (max-width: 758px) {
+    .text-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .profile-image {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .text-container h2 {
+        text-align: center;
+    }
+
+    .text-container p {
+        text-align: center;
+    }
 }
 
-.persona h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
+@media (max-width: 480px) {
+    .text-container {
+        padding: 40px;
+    }
 
-.persona p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
+    .text-container h2 {
+        font-size: 20px;
+    }
 
-.persona br {
-    margin-bottom: 10px;
+    .text-container p {
+        font-size: 16px;
+    }
 }
