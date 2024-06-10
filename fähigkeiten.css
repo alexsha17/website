@@ -87,6 +87,15 @@
         padding-top: 10px;
     }
 
+    .lorem-text {
+        padding: 20px;
+        text-align: center; /* Center the text in mobile view */
+    }
+
+    .lorem-text h2 {
+        text-align: center; /* Center the h2 text in mobile view */
+        width: 100%; /* Take full width for centering */
+    }
 }
 
 @media (max-width: 480px) {
@@ -216,6 +225,35 @@ nav ul li a:hover {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0); /* Adjusted box-shadow to be smaller */
     margin-top: -150px;
+
+    
+}
+
+.container p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 0 10px 18px rgba(255, 255, 255, 0.3);
+
+}
+
+.lorem-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 0 10px 18px rgba(255, 255, 255, 0.3);
+
+}
+
+.lorem-text h2 {
+    text-align: center; /* Center the h2 text in desktop view */
+    width: 100%; /* Take full width for centering */
 }
 
 .text-container {
