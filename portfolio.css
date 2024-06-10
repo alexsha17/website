@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
 @keyframes enhancedFadeIn {
     0% { opacity: 0; transform: scale(0.95) rotate(-5deg); }
     50% { opacity: 0.7; transform: scale(1.02); }
@@ -71,15 +78,15 @@
     }
 }
 
-
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow-x: hidden;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -129,7 +136,6 @@ nav ul li a {
     border: 2px solid transparent;
     padding: 5px 10px;
     margin-right: 50px;
-
 }
 
 nav ul li a:hover {
@@ -141,7 +147,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1; 
+    flex: 1;
     min-height: calc(100vh - 60px);
 }
 
@@ -197,35 +203,84 @@ main {
     font-size: 14px;
 }
 
+.project img {
+    padding: 10px;
+}
 
 .content {
     display: flex;
-    justify-content: space-between;
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     background: rgba(255, 255, 255, 0);
     border-radius: 10px;
     box-shadow: 0 10px 18px rgba(255, 255, 255, 0.3);
-
 }
 
 .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     animation: enhancedFadeIn 2.5s ease-in-out forwards;
-    width: 200%;
-    padding: 25px; 
+    width: 100%;
+    padding: 25px;
 }
 
 .text-container h2 {
     font-size: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .text-container p {
     padding: 20px;
-    text-align: left; 
-    color: #ffffff; 
-    font-size: 12px; 
-    line-height: 1.5; 
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1.5;
     margin-bottom: 10px;
+}
 
+img, .image-placeholder {
+    max-width: 100%;
+    height: auto;
+}
+
+.profile-image {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 758px) {
+    .text-container {
+        padding: 30px;
+    }
+
+    .profile-image {
+        margin-bottom: 20px;
+    }
+
+    .text-container h2 {
+        text-align: center;
+    }
+
+    .text-container p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-container {
+        padding: 40px;
+    }
+
+    .text-container h2 {
+        font-size: 20px;
+    }
+
+    .text-container p {
+        font-size: 16px;
+    }
 }
